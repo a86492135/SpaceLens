@@ -1,107 +1,160 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<!-- saved from url=(0097)file:///H:/%E4%B8%AD%E5%9B%BD%E8%88%AA%E5%A4%A9/SpaceLens/SpaceLens%E5%AE%98%E7%BD%91/index.html# -->
+<html style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  		<title>SpaceLens云上天镜</title>
+<!-- 
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>SpaceLens 云上天镜</title>
-    <style>
-        body {
-            -webkit-font-smoothing: antialiased;
-            font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
-            background-image: url('https://raw.githubusercontent.com/a86492135/SpaceLens/main/background.jpg');
-            font-size: 85%;
-            margin: 0;
-        }
-        
-        h2 {
-            font-size: 220%;
-            font-weight: 400;
-        }
-        
-        .content {
-            position: absolute;
-            width: 100%;
-            top: 40%;
-            transform: translate(0, -50%);
-            text-align: center;
-        }
-        
-        .timer {
-            font-size: 180%;
-            line-height: 1.5;
-            margin: 1em 0;
-        }
-        
-        .timer b {
-            color: rgb(253, 99, 125);
-        }
-    </style>
-</head>
+Highway Template
+
+https://templatemo.com/tm-520-highway
+
+-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="file:///H:/%E4%B8%AD%E5%9B%BD%E8%88%AA%E5%A4%A9/SpaceLens/SpaceLens%E5%AE%98%E7%BD%91/apple-touch-icon.png">
+
+        <link rel="stylesheet" href="./SpaceLens云上天镜_files/bootstrap.min.css">
+        <link rel="stylesheet" href="./SpaceLens云上天镜_files/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="./SpaceLens云上天镜_files/fontAwesome.css">
+        <link rel="stylesheet" href="./SpaceLens云上天镜_files/light-box.css">
+        <link rel="stylesheet" href="./SpaceLens云上天镜_files/templatemo-style.css">
+
+        <link href="./SpaceLens云上天镜_files/css" rel="stylesheet">
+
+        <script src="./SpaceLens云上天镜_files/modernizr-2.8.3-respond-1.4.2.min.js.下载"></script>
+    </head>
 
 <body>
-    <div class="content">
-		<h1>官网即将装修完成</h1>
-		<h3>你所看到的不同，是处处不同</h3>
-		<h2>SpaceLens云上天镜，我们已经成立</h2>
-        <div class="timer">
-            <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
+
+    <nav>
+        <div class="logo">
+            <a href="https://www.spacelens.cn">Space<em>Lens	</em></a>
         </div>
+        <div class="menu-icon">
+        <span></span>
+      </div>
+    </nav>
+
+    <div id="video-container">
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <div class="inner">
+              <h1>欢迎来到 <em>SpaceLens云上天镜</em></h1>
+              <p>我们拥有一腔热血去记录这个时代</p>
+              <p>我们是一群追火箭的青年</p>
+                <div class="scroll-icon">
+                    <a class="scrollTo active" data-scrollto="portfolio" href="https://space.bilibili.com/1875198641"><img src="./SpaceLens云上天镜_files/scroll-icon.png" alt=""></a>
+                </div>    
+            </div>
+        </div>
+        <video autoplay="" loop="" muted="">
+        	<source src="highway-loop.mp4" type="video/mp4">
+        </video>
     </div>
-    <script language="javascript">
-        function timer() {
-          window.setTimeout("show_date_time()", 1000);
-          var start = new Date("2021-04-29 12:22:00"); // 2015.7.2
-            var t = new Date().getTime() - start;
-            var h = ~~(t / 1000 / 60 / 60 % 24);
-            if (h < 10) {
-                h = "0" + h;
-            }
-            var m = ~~(t / 1000 / 60 % 60);
-            if (m < 10) {
-                m = "0" + m;
-            }
-            var s = ~~(t / 1000 % 60);
-            if (s < 10) {
-                s = "0" + s;
-            }
-            document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
-            document.getElementById('h').innerHTML = h;
-            document.getElementById('m').innerHTML = m;
-            document.getElementById('s').innerHTML = s;
-        }
-        timer();
-    </script>
-    <!-->
-    <script language="javascript">
-	    function show_date_time() {
-	        window.setTimeout("show_date_time()", 1000);
-	        BirthDay = new Date("4/29/2021 12:22:00");//这个日期是可以修改的
-	        today = new Date();
-	        timeold = (today.getTime() - BirthDay.getTime());
-	        sectimeold = timeold / 1000
-	        secondsold = Math.floor(sectimeold);
-	        msPerDay = 24 * 60 * 60 * 1000
-	        e_daysold = timeold / msPerDay
-	        daysold = Math.floor(e_daysold);
-	        e_hrsold = (e_daysold - daysold) * 24;
-	        hrsold = Math.floor(e_hrsold);
-	        e_minsold = (e_hrsold - hrsold) * 60;
-	        minsold = Math.floor((e_hrsold - hrsold) * 60);
-	        seconds = Math.floor((e_minsold - minsold) * 60);
-          document.getElementById('d').innerHTML = daysold;
-          document.getElementById('h').innerHTML = hrsold;
-          document.getElementById('m').innerHTML = minsold;
-          document.getElementById('s').innerHTML = seconds;
-	    }
-	    show_date_time();
-	</script>
-  <!-->
 
-</body>
 
-</html>
+    
 
+
+    <footer>
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <p>Copyright © 2022 SpaceLens 
+    
+    | Designed by Belief.W</p>
+            </div>
+        </div>
+    </footer>
+
+
+      <!-- Modal button -->
+    <div class="popup-icon">
+      <button id="modBtn" class="modal-btn"><img src="./SpaceLens云上天镜_files/contact-icon.png" alt=""></button>
+    </div>  
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <!-- Modal Content -->
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h3 class="header-title">Say hello to <em>SpaceLens</em></h3>
+          <div class="close-btn"><img src="./SpaceLens云上天镜_files/close_contact.png" alt=""></div>    
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="col-md-6 col-md-offset-3">
+            <form id="contact" action="https://space.bilibili.com/1875198641" method="post">
+                <div class="row">
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="btn">Send Message Now</button>
+                      </fieldset>
+                    </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <section class="overlay-menu">
+      <div class="container">
+        <div class="row">
+          <div class="main-menu">
+              <ul>
+                  <li>
+                      <a href="https://www.spacelens.cn">Home</a>
+                  </li>
+                  <li>
+                      <a href="https://www.bilibili.com/video/BV1iV41177oG">天和核心舱纪录片</a>
+                  </li>
+                  <li>
+                      <a href="https://www.bilibili.com/video/BV1ro4y117TX">天舟二纪录片</a>
+                  </li>
+                  <li>
+                      <a href="https://www.bilibili.com/video/BV1EM4y1u7ae">神十二纪录片</a>
+                  </li>
+                  <li>
+                      <a href="https://www.bilibili.com/video/BV1qM4y137Mn">天舟三纪录片</a>
+                  </li>
+                  <li>
+                      <a href="https://www.bilibili.com/video/BV1KP4y1h7Yr">天舟三转运片</a>
+                  </li>
+              </ul>
+              <p>We create awesome Rocket vidoes for you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./SpaceLens云上天镜_files/jquery.min.js.下载"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="./SpaceLens云上天镜_files/bootstrap.min.js.下载"></script>
+    
+    <script src="./SpaceLens云上天镜_files/plugins.js.下载"></script>
+    <script src="./SpaceLens云上天镜_files/main.js.下载"></script>
+
+    
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href="https://www.spacelens.cn"></a><a class="lb-next" href="https://www.spacelens.cn"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>
